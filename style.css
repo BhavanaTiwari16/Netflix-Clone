@@ -91,13 +91,44 @@ nav button{
 }
 
 .btn{
-    padding: 3px 8px;
+    padding: 3px 16px;
     font-weight: 400;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.drop-down{
+    display: inline-block;
+    position: relative;
+}
+
+.drop-down-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 90px;
+    min-height: 50px;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.drop-down-content a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    border-radius: 8px;
+    padding: 4px 16px;
+}
+
+.drop-down:hover .drop-down-content{
+    display: block;
+}
+
+.drop-down-content a:hover{
+    background-color: rgb(39, 152, 217);
 }
 
 .btn-red{
